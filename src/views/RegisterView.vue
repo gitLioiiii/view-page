@@ -6,7 +6,7 @@
         <div class="content">
           <!-- 左上角logo -->
           <div class="logo-box">
-            <img src="/favicon.ico" alt="Logo" />
+            <img :src="`${import.meta.env.BASE_URL}favicon.ico`" alt="Logo" />
             <p class="logo-text">Content Moderation System</p>
           </div>
 
