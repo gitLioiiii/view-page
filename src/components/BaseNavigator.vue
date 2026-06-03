@@ -11,7 +11,7 @@
       <RouterLink class="logo-link" to="/" tabindex="-1">
         <div class="logo-image-wrapper">
           <img
-            :src="logoUrl"
+            :src="faviconUrl"
             class="logo-img"
             alt="内容审核系统"
           />
@@ -117,8 +117,10 @@ import { ElMenu, ElMenuItem, ElSubMenu } from 'element-plus'
 import { useSidebarStore } from '@/stores/sidebar'
 import { useUserStore } from '@/stores/user'
 import { useTheme } from '@/utils/useTheme'
-import logoUrl from '@/assets/img/logo.png'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+
+// 部署在子路径时 public 资源(favicon)需用 BASE_URL 前缀；import.meta 不能写在模板里，故在此定义
+const faviconUrl = `${import.meta.env.BASE_URL}favicon.ico`
 
 const route = useRoute()
 const sidebarStore = useSidebarStore()
