@@ -6,7 +6,7 @@
         <div class="content">
           <!-- 左上角logo -->
           <div class="logo-box">
-            <img :src="`${import.meta.env.BASE_URL}favicon.ico`" alt="Logo" />
+            <img :src="faviconUrl" alt="Logo" />
             <p class="logo-text">Content Moderation System</p>
           </div>
 
@@ -131,6 +131,9 @@ import ModerationIcon from '@/assets/svg/moderation-icon.svg?component'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
 const userStore = useUserStore()
+
+// 部署在子路径时 public 资源(favicon)需用 BASE_URL 前缀；import.meta 不能写在模板里，故在此定义
+const faviconUrl = `${import.meta.env.BASE_URL}favicon.ico`
 
 const form = ref(null)
 const router = useRouter()
