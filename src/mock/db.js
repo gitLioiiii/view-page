@@ -121,7 +121,7 @@ export const CHAT_MESSAGES = [
   { type: 'system', content: '欢迎来到内容审核演示聊天室，消息会经过 AI 审核后展示。', createdAt: '2026-06-03 09:00:00' },
   { userId: 4, username: 'zhangsan', name: '张三', avatar: avatar('张三', 'zhangsan'), content: '大家好呀，这个审核系统看起来不错！', type: 'text', createdAt: '2026-06-03 09:02:11' },
   { userId: 6, username: 'wangwu', name: '王五', avatar: avatar('王五', 'wangwu'), content: '是的，发消息会先经过敏感词和 AI 审核~', type: 'text', createdAt: '2026-06-03 09:03:40' },
-  { userId: 3, username: 'lixin', name: '李欣', avatar: avatar('李欣', 'lixin'), content: '这是一个用于简历展示的纯前端 Demo 😄', type: 'text', createdAt: '2026-06-03 09:05:02' },
+  { userId: 3, username: 'lixin', name: '测试', avatar: avatar('测试', 'lixin'), content: '这是一个用于简历展示的纯前端 Demo 😄', type: 'text', createdAt: '2026-06-03 09:05:02' },
 ]
 
 // ============ 报表数据 ============
